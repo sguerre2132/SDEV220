@@ -23,7 +23,7 @@ class Book(db.Model):
         }
 def create_tables():
     db.create_all()
-
+# Get all books to show on Home page
 @app.route('/')
 def home():
     return get_books()
